@@ -7,3 +7,8 @@ lib/govuk_template.html
 govuk_modules
 node_modules/*
 .tmuxp.*
+.idea
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
