@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - git archive --format=zip HEAD > govuk_prototype_kit-aws-master.zip
+      - echo "^^^^^^^^^^^^^^^^^^"
+      - aws s3 cp govuk_prototype_kit-aws-master.zip s3://hmrc-prototypes-spike/govuk_prototype_kit-aws-master.zip
+
+artifacts:
+  files:
+    - govuk_prototype_kit-aws-master.zip
+  discard-paths: yes
