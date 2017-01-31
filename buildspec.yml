@@ -4,6 +4,9 @@ phases:
   build:
     commands:
       - ls -al
+      - git init
+      - git add .
+      - git commit -m "hack"
       - git archive --format=zip HEAD > govuk_prototype_kit-aws-master.zip
       - echo "^^^^^^^^^^^^^^^^^^"
       - aws s3 cp govuk_prototype_kit-aws-master.zip s3://hmrc-prototypes-spike/govuk_prototype_kit-aws-master.zip
