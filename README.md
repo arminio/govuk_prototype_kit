@@ -2,7 +2,6 @@
 
  
  
- 
  This repository is to be used for exploratory AWS prototyping work only and will be replaced with the GOV.UK Prototype kit.
  - It contains an [.ebextensions](.ebextensions) folder which is used by Elastic Beanstalk. This folder ideally will be combined with the standard GOV.UK Prototype kit during a build/pipeline process.
  - `gulp-sass` has had its version bumped to `3.0.0` due to incompatibilities between one of its dependencies `node-sass` and the AWS Linux AMI and Node v6.9.1
